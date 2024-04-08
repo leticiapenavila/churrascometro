@@ -1,0 +1,35 @@
+:root{
+    --fundo-light: #ffffff;
+    --texto-light: #000000;
+    --borda-light: rgb(42, 235, 239);
+
+    --fundo-dark: #000000;
+    --texto-dark: #ffffff;
+    --borda-dark: blue;
+
+    .light{
+        --fundo-use: var(--fundo-light);
+        --texto-use: var(--texto-light);
+        --borda-use: var(--borda-light);
+    }
+    .dark{
+        --fundo-use: var(--fundo-dark);
+        --texto-use: var(--texto-dark);
+        --borda-use: var(--borda-dark);
+    }
+}
+
+
+body {
+    background-color: var(--fundo-use);
+    color:  var(--texto-use);
+} 
+
+p{
+    color:  var(--texto-use); 
+}
+
+h2{
+    color:  var(--texto-use);  
+}
+

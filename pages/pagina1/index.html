@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascometro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <button id="btnClaro" >Claro</button>
+        <button id="btnEscuro" >Escuro</button>
+
+        <div>
+        <h1>Churrascômetro</h1>
+        <p>Precisa de uma ajudinha com o churrasco?</p>
+        <p>Quantas pessoas vão participar?</p>
+        </div>
+
+        <div>
+            <div id="calculoChurrasco">
+                <p>Homens</p>
+                <h2 id="numerosHomens">0</h2>
+                <button onclick="adicionarNumero('numerosHomens')">+</button>
+                <button onclick="diminuirNumero('numerosHomens')">-</button>
+            </div>
+            <div>
+                <p>Mulheres</p>
+                <h2 id="numerosMulheres">0</h2>
+                <button onclick="adicionarNumero('numerosMulheres')">+</button>
+                <button onclick="diminuirNumero('numerosMulheres')">-</button>
+            </div>
+            <div>
+                <p>Crianças</p>
+                <h2 id="numerosCriancas">0</h2>
+                <button onclick="adicionarNumero('numerosCriancas')">+</button>
+                <button onclick="diminuirNumero('numerosCriancas')">-</button>
+            </div>
+            <div>
+                <p>Quantos adultos bebem?</p>
+                <h2 id="numerosAdultos">0</h2>
+                <button onclick="adicionarNumero('numerosAdultos')">+</button>
+                <button onclick="diminuirNumero('numerosAdultos')">-</button>
+            </div>
+        </div>
+            <button href="../pagina2/pagina-02.html">calcular</button>
+
+    <script src="./pagina-01.js"></script>
+</body>
+</html>
