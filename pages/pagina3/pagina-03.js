@@ -11,12 +11,22 @@ function onClickButton(event){
     if(event.target.id == 'btnEscuro'){
         document.body.classList.add('dark');
         document.body.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
     }else{
         document.body.classList.add('light');
         document.body.classList.remove('dark');
+        localStorage.setItem('theme', 'light'); 
     }
 };
 
+window.onload = function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark');
+    } else {
+        document.body.classList.add('light');
+    }
+};
 
 
 
